@@ -47,4 +47,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    @include mixins.mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

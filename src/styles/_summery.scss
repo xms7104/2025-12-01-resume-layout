@@ -15,20 +15,26 @@
 }
 
 .summery_block{
-    height: 35%;
     display: grid;
     justify-content: start;
     align-items: center;
+    margin: 32px 0px;
 
     @include mixins.pc {
         height: auto;
         display: grid;
         justify-content: center;
         align-items: center;
+        margin: 0px 0px;
     }
 
     @include mixins.ipad {
         margin: 16px 0px;
+        padding: 0px 32px;
+        height: auto;
+    }
+
+    @include mixins.mobile {
         padding: 0px 32px;
         height: auto;
     }
@@ -51,5 +57,10 @@
     @include mixins.ipad {
         width: 100%;
         padding: 0px 32px;
+    }
+
+    @include mixins.mobile {
+        width: 100%;
+        padding: 0px 16px;
     }
 }

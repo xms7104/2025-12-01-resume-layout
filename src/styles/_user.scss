@@ -16,24 +16,37 @@
         align-items: center;
         margin: 0 auto;
     }
+
+    @include mixins.mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
 }
 
 .name_block{
     display: grid;
     justify-content: start;
     align-items: center;
+    margin: 32px 0px;
 
     @include mixins.pc {
-        display: grid;
         justify-content: center;
-        align-items: center;
+        margin: 0px 0px;
+
     }
 
     @include mixins.ipad {
         height: auto;
         margin-top: 16px;
         justify-content: center;
-        align-items: center;
+        margin: 0px 0px;
+    }
+
+    @include mixins.mobile {
+        margin: 40px 0px 0px 0px;
     }
 }
 
@@ -47,6 +60,11 @@
     }
 
     @include mixins.ipad {
+        font-size: 52px;
+        text-align: center;
+    }
+
+    @include mixins.mobile {
         font-size: 52px;
         text-align: center;
     }
@@ -71,5 +89,14 @@
         align-items: center;
         margin: 0 auto;
         height: auto;
+    }
+
+    @include mixins.mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        margin: 0 auto;
     }
 }

@@ -16,6 +16,10 @@
     @include mixins.ipad {
         padding: 64px 32px 16px 32px;
     }
+
+    @include mixins.mobile {
+        padding-bottom: 0px;
+    }
 }
 
 .information_text{
@@ -38,10 +42,26 @@
         justify-content: center;
         align-items: center;
     }
+
+    @include mixins.mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .information_detail_block{
-    margin: 16px 0px;
+    width: 75%;
+    margin: 16px auto;
+
+    @media (max-width: 959px) {
+        width: auto;
+        margin: 0px 0px;
+    }
+
+    @include mixins.mobile {
+        margin: 16px 0px 32px 0px;
+    }
 }
 
 .information_title{

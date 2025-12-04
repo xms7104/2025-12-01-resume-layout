@@ -5,6 +5,8 @@
     background-image: url(#{v.$bg-pc});
     background-size: cover;
     background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
     
     @media (max-width: 959px) {
         background-image: url(#{v.$bg-mobile});

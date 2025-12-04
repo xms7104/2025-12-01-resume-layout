@@ -1,0 +1,17 @@
+@use './variables';
+@use './mixins';
+
+.skills_block{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+}
+
+.skills_detail{
+    margin-bottom: 32px;
+}
+
+.skills_detail_title{
+    font-size: 18px;
+    font-weight: 600;
+}

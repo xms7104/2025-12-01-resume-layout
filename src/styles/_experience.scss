@@ -1,0 +1,13 @@
+@use './variables' as v;
+@use './mixins';
+
+.experience_title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #{v.$text-dark};
+}
+
+.experience_text{
+    font-size: 16px;
+    color: #{v.$text-dark};
+}

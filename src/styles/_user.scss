@@ -1,0 +1,39 @@
+@use './mixins';
+
+.user_image{
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 50%;
+}
+
+.name_block{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+
+    @include mixins.pc {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include mixins.ipad {
+        height: auto;
+        margin-top: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include mixins.mobile {
+        margin-top: 40px;
+    }
+}
+
+.name_text{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.not_pc_block{
+    display: none;
+}

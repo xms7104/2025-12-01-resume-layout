@@ -1,0 +1,34 @@
+@use './variables' as v;
+@use './mixins';
+
+.information_block{
+    width: 35%;
+    padding: 0px 32px;
+    margin: 16px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.information_text{
+    font-size: 16px;
+    color: #{v.$text-dark};
+    margin-bottom: 8px;
+}
+
+.information_detail_block{
+    margin: 16px 0px;
+}
+
+.information_title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #{v.$text-dark};
+}
+
+.information_href{
+    text-decoration: none;
+    color: #{v.$text-dark};
+    cursor: pointer;
+}

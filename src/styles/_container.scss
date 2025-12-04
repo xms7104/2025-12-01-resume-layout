@@ -1,0 +1,15 @@
+@use './variables' as v;
+@use './mixins';
+
+.container_background{
+    background-image: url(#{v.$bg-pc});
+    background-size: cover;
+    background-position: center;
+}
+
+.container_block{
+    padding: 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}

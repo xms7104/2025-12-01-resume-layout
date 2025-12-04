@@ -5,6 +5,10 @@
     background-image: url(#{v.$bg-pc});
     background-size: cover;
     background-position: center;
+    
+    @media (max-width: 959px) {
+        background-image: url(#{v.$bg-mobile});
+    }
 }
 
 .container_block{
@@ -12,4 +16,10 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
+    
+    @media (max-width: 959px) {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
 }

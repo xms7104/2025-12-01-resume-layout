@@ -5,9 +5,46 @@
     font-size: 24px;
     font-weight: 600;
     color: #{v.$text-dark};
+
+    @media (max-width: 959px) {
+        color: #{v.$text-light};
+    }
+}
+
+.experience_block{
+    @include mixins.pc {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.experience_list{
+    @include mixins.pc {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .experience_text{
     font-size: 16px;
     color: #{v.$text-dark};
+
+    @media (max-width: 959px) {
+        color: #{v.$text-light};
+    }
+
+    @include mixins.pc {
+        width: 32%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    @include mixins.ipad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

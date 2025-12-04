@@ -5,6 +5,10 @@
     display: grid;
     justify-content: start;
     align-items: center;
+
+    @media (max-width: 959px) { // pc mixin 769~960
+        height: auto;
+    }
 }
 
 .skills_detail{

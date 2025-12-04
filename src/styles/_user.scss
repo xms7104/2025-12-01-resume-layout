@@ -4,6 +4,18 @@
     margin: 0 auto;
     margin-bottom: 32px;
     width: 50%;
+
+    @include mixins.pc {
+        width: 45%;
+        margin-bottom: 0px;
+    }
+
+    @include mixins.ipad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 }
 
 .name_block{
@@ -23,17 +35,41 @@
         justify-content: center;
         align-items: center;
     }
-
-    @include mixins.mobile {
-        margin-top: 40px;
-    }
 }
 
 .name_text{
     font-size: 48px;
     font-weight: 600;
+
+    @media (max-width: 959px) {
+        font-size: 64px;
+        margin: 0px 0px;
+    }
+
+    @include mixins.ipad {
+        font-size: 52px;
+        text-align: center;
+    }
 }
 
 .not_pc_block{
     display: none;
+    
+    @media (max-width: 959px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 32px;
+        margin-bottom: 42px;
+    }
+
+    @include mixins.ipad {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: auto;
+    }
 }

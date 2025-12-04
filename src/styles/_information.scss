@@ -8,12 +8,36 @@
     display: grid;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 959px) {
+        width: 100%;
+    }
+
+    @include mixins.ipad {
+        padding: 64px 32px 16px 32px;
+    }
 }
 
 .information_text{
     font-size: 16px;
     color: #{v.$text-dark};
     margin-bottom: 8px;
+
+    @media (max-width: 959px) {
+        color: #{v.$text-light};
+    }
+
+    @include mixins.pc {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    @include mixins.ipad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .information_detail_block{
@@ -25,10 +49,19 @@
     font-weight: 600;
     margin-bottom: 16px;
     color: #{v.$text-dark};
+
+    @media (max-width: 959px) {
+        display: none;
+        color: #{v.$text-light};
+    }
 }
 
 .information_href{
     text-decoration: none;
     color: #{v.$text-dark};
     cursor: pointer;
+
+    @media (max-width: 959px) {
+        color: #{v.$text-light};
+    }
 }

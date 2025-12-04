@@ -3,6 +3,7 @@ import Experience from "../components/Experience";
 import Summery from "../components/Summery";
 import Skills from "../components/Skills";
 import userImage from '../assets/userImage.webp';
+import useInLayout from "../hook/useInLayout";
 
 function Home(){
     const isDesktop = useInLayout(960);

@@ -1,0 +1,19 @@
+@use './variables' as v;
+
+@mixin mobile {
+    @media (min-width: 375px) and (max-width: #{v.$bp-mobile}px) {
+        @content;
+    }
+}
+  
+@mixin ipad {
+    @media (min-width: #{v.$bp-mobile + 1}px) and (max-width: #{v.$bp-ipad}px) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width: #{v.$bp-ipad + 1}px) and (max-width: #{v.$bp-pc}px) {
+        @content;
+    }
+}
